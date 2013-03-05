@@ -1,5 +1,4 @@
-get-postal-code-in-current-location
-===================================
+# Get a Postal Code Based on Your Current Location
 
 A simple jQuery script to generate a postal code based on your current location.
 
