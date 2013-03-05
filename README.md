@@ -7,8 +7,7 @@ This script uses the HTML5 geolocation API and the Google Geocoding API.
 
 Note that Safari currently only supports the HTML5 gelocation API while on wifi.
 
-For more information regarding these APIs go to:
-------------------------------------------------
+### For more information regarding these APIs go to:
 
 http://www.w3schools.com/html/html5_geolocation.asp
 
