@@ -1,4 +1,14 @@
-//FIND POSTAL CODE BASED ON USER'S LOCATION
+/*
+
+Name: Get a Postal Code Based on Your Location
+Dependencies: jQuery, HTML5
+Author: Michael Lynch
+Author URL: http://michaelynch.com
+Date Created: March 4, 2013
+
+*/
+
+//GET POSTAL CODE BASED ON YOUR LOCATION
 
 $(function() {
 
