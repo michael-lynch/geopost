@@ -29,9 +29,3 @@ Create a button or anchor to trigger the lookup with the class "geo-lookup" and 
 		<input type="submit" value="Use My Current Location" class="geo-lookup" />
 
 	</form>
-
-### For more information regarding these APIs go to:
-
-http://www.w3schools.com/html/html5_geolocation.asp
-
-https://developers.google.com/maps/documentation/geocoding/
