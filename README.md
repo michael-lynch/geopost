@@ -12,11 +12,11 @@ Include jQuery 1.9.0+, the Google Geocoding API and scripts.js in the head or fo
 
 Of course, you can copy the contents of scripts.js into your own .js file. Just be sure to load the DOM before executing the script (visit [the jQuery documentation](http://learn.jquery.com/using-jquery-core/document-ready/) if you are unfamiliar with how to do that).
 
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     
-    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
     
 Create a button or anchor to trigger the lookup with the class "geo-lookup" and an input, div or span with a class "postal-code" to contain the postal code that is returned. The below example uses a submit button to trigger the lookup and an input to display the returned postal code.
 
