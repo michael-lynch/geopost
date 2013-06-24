@@ -5,27 +5,27 @@
 <head>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+
 	<meta charset="utf-8">
 
 	<title>Postal Code Lookup</title>
-	
-	<meta name="description" content="A simple jQuery script to generate a postal code based on your current location.">
-	
+
+	<meta name="description" content="A simple jQuery script to generate a random postal code based on your current location.">
+
 	<meta name="author" content="Michael Lynch">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" >
-	
+
 </head>
 
 <!--[if lt IE 7]>
-	<body class="no-js lt-ie9 lt-ie8 lt-ie7 en" lang="en"> 
+	<body class="no-js lt-ie9 lt-ie8 lt-ie7 en" lang="en">
 <![endif]-->
 
 <!--[if IE 7]>
-	<body class="no-js lt-ie9 lt-ie8 en" lang="en"> 
+	<body class="no-js lt-ie9 lt-ie8 en" lang="en">
 <![endif]-->
 
 <!--[if IE 8]>
@@ -40,29 +40,33 @@
 	<body class="no-js en" lang="en">
 <!--<![endif]-->
 
-		<form name="" method="" action="">
-		
-			<label for="postal-code">Enter your postal code:</label>
-		
-			<input type="text" class="postal-code" name="postal-code" />
-			
-			<input type="submit" value="Use My Current Location" class="geo-lookup" />
-		
-		</form>
-		
-		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-	
+		<section>
+
+			<form name="" method="" action="">
+
+				<label for="postal-code">Enter your postal code:</label>
+
+				<input type="text" class="postal-code" />
+
+				<input type="submit" value="Use My Current Location" class="geo-lookup" />
+
+			</form>
+
+		</section>
+
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 		<script type="text/javascript">
 		if (typeof jQuery == 'undefined') {
-		    document.write(unescape("%3Cscript src='/js/lib/jquery.1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+		    document.write(unescape("%3Cscript src='../src/lib/jquery.1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
 		}
 		</script>
-		
+
 		<!-- google api -->
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-		
-		<script type="text/javascript" src="js/scripts.js"></script>
+
+		<script type="text/javascript" src="../src/scripts.js"></script>
 
 	</body>
-	
+
 </html>
