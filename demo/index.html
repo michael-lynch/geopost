@@ -8,65 +8,48 @@
 
 	<meta charset="utf-8">
 
-	<title>Postal Code Lookup</title>
+	<title>Get Postal Code jQuery Plugin</title>
 
-	<meta name="description" content="A simple jQuery script to generate a random postal code based on your current location.">
+	<meta name="description" content="A simple, lightweight jQuery plugin to generate a random postal code based on your current location.">
 
-	<meta name="author" content="Michael Lynch">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" >
+	<meta name="author" content="http://michaelynch.com">
 
 </head>
 
-<!--[if lt IE 7]>
-	<body class="no-js lt-ie9 lt-ie8 lt-ie7 en" lang="en">
-<![endif]-->
+<body>
 
-<!--[if IE 7]>
-	<body class="no-js lt-ie9 lt-ie8 en" lang="en">
-<![endif]-->
+	<form>
 
-<!--[if IE 8]>
-	<body class="no-js lt-ie9 en" lang="en">
-<![endif]-->
+		<label for="postal-code">Enter your postal code:</label>
 
-<!--[if IE 9]>
-	<body class="no-js ie9 en" lang="en">
-<![endif]-->
+		<input type="text" id="postal-code" />
 
-<!--[if gt IE 8]><!-->
-	<body class="no-js en" lang="en">
-<!--<![endif]-->
+		<input type="submit" value="Use My Current Location" id="geo-lookup" />
 
-		<section>
+	</form>
 
-			<form name="" method="" action="">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-				<label for="postal-code">Enter your postal code:</label>
+	<script type="text/javascript">
+	if (typeof jQuery == 'undefined') {
+	    document.write(unescape("%3Cscript src='../src/lib/jquery.1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
-				<input type="text" class="postal-code" />
+	<script src="../src/getPostalCode.js"></script>
+	
+	<script>
+	
+		$(function() {
+		
+			$('#geo-lookup').getPostalCode();
+			
+		});
+	
+	</script>
 
-				<input type="submit" value="Use My Current Location" class="geo-lookup" />
-
-			</form>
-
-		</section>
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-		<script type="text/javascript">
-		if (typeof jQuery == 'undefined') {
-		    document.write(unescape("%3Cscript src='../src/lib/jquery.1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
-		}
-		</script>
-
-		<!-- google api -->
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
-		<script src="../src/scripts.js"></script>
-
-	</body>
+</body>
 
 </html>
