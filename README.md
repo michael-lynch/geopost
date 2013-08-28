@@ -6,6 +6,8 @@ This plugin uses the <a href="http://www.w3schools.com/html/html5_geolocation.as
 
 <em>* Note that Safari currently only supports the HTML5 Gelocation API while on wifi. (<a href="http://stackoverflow.com/questions/3791442/geolocation-in-safari-5" target="_blank">source</a>)</em>
 
+<a href="http://michael-lynch.github.io/get-postal-code-in-current-location/" target="_blank">See a demo</a>
+
 ##Instructions
 
 Include jQuery, the Google Geocoding API and the plugin the head or footer of your page. 
