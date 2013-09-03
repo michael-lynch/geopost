@@ -1,6 +1,6 @@
 /*!
 
-Name: Get a Postal Code Based on Your Location
+Name: Geopost
 Dependencies: jQuery, HTML5
 Author: Michael Lynch
 Author URL: http://michaelynch.com
@@ -11,7 +11,7 @@ Licensed under the MIT license
 
 ;(function($) {
 
-    $.fn.getPostalCode = function(options) {
+    $.fn.geoPost = function(options) {
     
     	//return if no element was bound
 		//so chained events can continue

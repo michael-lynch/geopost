@@ -1,4 +1,4 @@
-# Get a Postal Code Based on Your Current Location
+#Geopost
 
 A simple, lightweight jQuery plugin to generate a random postal code based on your current location.
 
@@ -10,13 +10,13 @@ This plugin uses the <a href="http://www.w3schools.com/html/html5_geolocation.as
 
 ##Instructions
 
-Include jQuery, the Google Geocoding API and the plugin the head or footer of your page. 
+Include jQuery, the Google Geocoding API and the plugin in the head or footer of your page. 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
     <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     
-    <script src="/js/plugins/getPostalCode.js"></script>
+    <script src="/js/plugins/geoPost.js"></script>
     
 Create an anchor, submit input or button to trigger the lookup and an input, div or span to contain the postal code that is returned. 
 
@@ -34,7 +34,7 @@ The below example uses a submit button to trigger the lookup and an input to dis
 	
 Initialize the plugin targeting the class, ID or element that will trigger the lookup.
 
-	$('#geo-lookup').getPostalCode();
+	$('#geo-lookup').geoPost();
 
 ####Options
 
@@ -49,7 +49,7 @@ Initialize the plugin targeting the class, ID or element that will trigger the l
 
 	$(function() {
 	
-		$('#geo-lookup').getPostalCode({
+		$('#geo-lookup').geoPost({
 			postalCodeTarget: 'my-postal-code'
 		});
 	
