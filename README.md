@@ -40,8 +40,14 @@ Initialize the plugin targeting the class, ID or element that will trigger the l
 
 <ol>
 
-<li>postalCodeTarget: "id"
-<br />A string that defines the ID of the element that will display the returned postal code (default: 'postal-code').
+<li>postalCodeTarget: "id / class / element"
+<br />A string that defines the class, ID or element that will display the returned postal code (default: 'postal-code').</li>
+
+<li>success: function() {}
+<br />A callback function that runs after the plugin has successfuly retrieved a postal code (optional).</li>
+
+<li>error: function() {}
+<br />A callback function that runs if there was an error retrieving a postal code (optional).</li>
 
 </ol>
 
@@ -50,7 +56,13 @@ Initialize the plugin targeting the class, ID or element that will trigger the l
 	$(function() {
 	
 		$('#geo-lookup').geoPost({
-			postalCodeTarget: 'my-postal-code'
+			postalCodeTarget: '#my-postal-code',
+			success: function() {
+				console.log('A postal code was successfully retrieved.');
+			},
+			error: function() {
+				console.log('There was an error retrieving a postal code.');
+			}
 		});
 	
 	});

@@ -21,7 +21,9 @@ Licensed under the MIT license
 
 		//define default parameters
         var defaults = {
-            postalCodeTarget: 'postal-code',
+            postalCodeTarget: '#postal-code',
+            success: function() {},
+            error: function() {}
         }
 
         //define plugin
@@ -51,16 +53,23 @@ Licensed under the MIT license
 				navigator.geolocation.getCurrentPosition(getPostalCode, geoLocationError, {timeout:5000});
 	
 			} else {
+			
+				//run error callback function
+				plugin.settings.error.call(this);
 	
-				//geolocation isn't supported
-				alert('Your browser does not support Geo Location.');
+				//geo location isn't supported
+				console.log('Your browser does not support Geo Location.');
 			}
 	
 		};
 	
 		function geoLocationError() {
+		
+			//run error callback function
+			plugin.settings.error.call(this);
 	
-			alert('Geo Location failed.');
+			//geo location failed
+			console.log('Geo Location failed.');
 	
 		}
 	
@@ -93,7 +102,10 @@ Licensed under the MIT license
 							if(postal.length > 3) {
 	
 								//place postal code inside text input
-								$('#'+plugin.settings.postalCodeTarget).val(postal);
+								$(plugin.settings.postalCodeTarget).val(postal);
+								
+								//run success callback function
+								plugin.settings.success.call(this);
 	
 								return false;
 							}

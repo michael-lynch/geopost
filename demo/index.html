@@ -44,7 +44,14 @@
 	
 		$(function() {
 		
-			$('#geo-lookup').geoPost();
+			$('#geo-lookup').geoPost({
+				success: function() {
+					console.log('A postal code was successfully retrieved.');
+				},
+				error: function() {
+					console.log('There was an error retrieving a postal code.');
+				}
+			});
 			
 		});
 	
