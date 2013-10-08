@@ -44,10 +44,10 @@ Initialize the plugin targeting the class, ID or element that will trigger the l
 <br />A string that defines the class, ID or element that will display the returned postal code (default: 'postal-code').</li>
 
 <li>success: function() {}
-<br />A callback function that runs after the plugin has successfuly retrieved a postal code (optional).</li>
+<br />A callback function that runs after the plugin has successfuly retrieved a postal code (default: function()).</li>
 
 <li>error: function() {}
-<br />A callback function that runs if there was an error retrieving a postal code (optional).</li>
+<br />A callback function that runs if there was an error retrieving a postal code (defaullt: function()).</li>
 
 </ol>
 
