@@ -1,0 +1,27 @@
+{
+	"name": "geopost",
+	"title": "Geopost",
+	"description": "A simple, lightweight jQuery plugin to generate a postal code based on your current location.",
+	"keywords": [
+		"location",
+		"postal",
+		"code",
+		"longitude",
+		"latitude",
+		"humidity",
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Michael Lynch",
+		"url": "http://michaelynch.com"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://raw.github.com/michael-lynch/geopost/master/LICENSE.md"
+		}
+	],
+	"dependencies": {
+		"jquery": ">=1.8"
+	}
+}
