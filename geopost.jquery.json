@@ -8,7 +8,7 @@
 		"code",
 		"longitude",
 		"latitude",
-		"humidity",
+		"humidity"
 	],
 	"version": "1.0.0",
 	"author": {
