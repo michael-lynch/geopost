@@ -7,10 +7,9 @@
 		"postal",
 		"code",
 		"longitude",
-		"latitude",
-		"humidity"
+		"latitude"
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": {
 		"name": "Michael Lynch",
 		"url": "http://michaelynch.com"
