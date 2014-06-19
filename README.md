@@ -12,29 +12,35 @@ This plugin uses the <a href="http://www.w3schools.com/html/html5_geolocation.as
 
 Include jQuery, the Google Geocoding API and the plugin in the head or footer of your page. 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
-    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    
-    <script src="/js/plugins/geoPost.js"></script>
+```html
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<script src="/js/plugins/geoPost.js"></script>
+```
     
 Create an anchor, submit input or button to trigger the lookup and an input, div or span to contain the postal code that is returned. 
 
 The below example uses a submit button to trigger the lookup and an input to display the returned postal code.
 
-    <form>
+```html
+<form>
 
-		<label for="postal-code">Enter your postal code:</label>
+	<label for="postal-code">Enter your postal code:</label>
 
-		<input type="text" id="postal-code" />
+	<input type="text" id="postal-code" />
 
-		<input type="submit" value="Use My Current Location" id="geo-lookup" />
+	<input type="submit" value="Use My Current Location" id="geo-lookup" />
 
-	</form>
+</form>
+```
 	
 Initialize the plugin targeting the class, ID or element that will trigger the lookup.
 
-	$('#geo-lookup').geoPost();
+```js
+$('#geo-lookup').geoPost();
+```
 
 ####Options
 
@@ -53,16 +59,18 @@ Initialize the plugin targeting the class, ID or element that will trigger the l
 
 #####Example
 
-	$(function() {
-	
-		$('#geo-lookup').geoPost({
-			postalCodeTarget: '#my-postal-code',
-			success: function() {
-				console.log('A postal code was successfully retrieved.');
-			},
-			error: function() {
-				console.log('There was an error retrieving a postal code.');
-			}
-		});
-	
+```js
+$(function() {
+
+	$('#geo-lookup').geoPost({
+		postalCodeTarget: '#my-postal-code',
+		success: function() {
+			console.log('A postal code was successfully retrieved.');
+		},
+		error: function() {
+			console.log('There was an error retrieving a postal code.');
+		}
 	});
+
+});
+```
